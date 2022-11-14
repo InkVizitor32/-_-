@@ -1,4 +1,4 @@
-﻿                                        Console.Clear();
+﻿Console.Clear();
 // //                    Задача 24: Напишите программу, которая принимает на
 // //                     вход число (А) и выдаёт сумму чисел от 1 до А.
 // // 7 -> 28
@@ -59,16 +59,16 @@
 // Console.WriteLine(razryad);
 // }
 
-                // Console.WriteLine("Введите число: ");
-                // int x=Convert.ToInt32(Console.ReadLine()) ;
-                // int a = (int)Math.Log10(x)+1;
-                // Console.WriteLine($"Число символов {a}");
+// Console.WriteLine("Введите число: ");
+// int x=Convert.ToInt32(Console.ReadLine()) ;
+// int a = (int)Math.Log10(x)+1;
+// Console.WriteLine($"Число символов {a}");
 
 
-                                    // Задача 28: Напишите программу, которая принимает 
-                                    // на вход число N и выдаёт произведение чисел от 1 до N.
-                                    // 4 -> 24
-                                    // 5 -> 120
+// Задача 28: Напишите программу, которая принимает 
+// на вход число N и выдаёт произведение чисел от 1 до N.
+// 4 -> 24
+// 5 -> 120
 
 
 
@@ -89,10 +89,10 @@
 // Console.WriteLine($"произведение чисел от 1 до {x} = {N}");
 
 
-                                                        // Задача 30:
-                                                        // Напишите программу, которая выводит массив
-                                                        // из 8 элементов, заполненный нулями и единицами в случайном порядке.
-                                                        // [1,0,1,1,0,1,0,0]
+// Задача 30:
+// Напишите программу, которая выводит массив
+// из 8 элементов, заполненный нулями и единицами в случайном порядке.
+// [1,0,1,1,0,1,0,0]
 
 
 // int [] array = new int[8];             // определить  массив из 8 элементов
@@ -127,49 +127,37 @@
 
 // Console.WriteLine(p);
 
-            // int[] array = new int[8];
+// int[] array = new int[8];
 
-            // for (int i=0; i<8; i++)
-            // {
-            // array [i] = new Random().Next(0,2);
-            // Console.Write(array[i]+" ");
-            // }
-
-
-
-
-                                    // Задача 25: Напишите цикл, который принимает на вход два числа (A и B) 
-                                    //         и возводит число A в натуральную степень B.
-
-                                    // 3, 5 -> 243 (3⁵)
-                                    // 2, 4 -> 16
-
-
-
-
-
-Console.WriteLine("Введите первое число: ");
-int x = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("Введите второе число: ");
-int y = Convert.ToInt32(Console.ReadLine());
-int N=1;
-void SumNumbers(int x)
-
-{
-int N=1;
-for (int i =1; i<=y;i++)
-N = N*y;
-Console.WriteLine($" {x} в натуральной степени {y} = {N}");
-}
-
-// int SumNumbers2(int x)
+// for (int i=0; i<8; i++)
 // {
-// int sum=0;
-// for (int i =1; i<=x;i++)
-// sum=sum+i;
-// return sum;
+// array [i] = new Random().Next(0,2);
+// Console.Write(array[i]+" ");
 // }
 
 
 
-Console.WriteLine(SumNumbers(N));
+
+
+
+
+//         
+
+
+
+// double[] numbers = new double[4];
+// Random rnd = new Random();
+// Console.WriteLine("Массив:");
+// for (int i = 0; i < numbers.Length; i++) {
+//     numbers[i] = rnd.NextDouble()  + 22;
+//     Console.Write($"   {numbers[i] }");
+// }
+
+
+double[] array = new double[5];
+Random a = new Random();   //экземпляр генератора случайных чисел
+for (int i = 0; i < array.Length; i++)
+{
+array[i] =a.Next(-100, 100) + a.NextDouble();
+Console.Write($"   {array[i]}");
+}
